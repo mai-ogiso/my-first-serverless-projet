@@ -1,0 +1,19 @@
+{
+  "name": "my-first-serverless-projet",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mai-ogiso/my-first-serverless-projet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mai-ogiso/my-first-serverless-projet/issues"
+  },
+  "homepage": "https://github.com/mai-ogiso/my-first-serverless-projet#readme"
+}
