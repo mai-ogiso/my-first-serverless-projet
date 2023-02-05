@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mai-ogiso/my-first-serverless-projet/issues"
   },
-  "homepage": "https://github.com/mai-ogiso/my-first-serverless-projet#readme"
+  "homepage": "https://github.com/mai-ogiso/my-first-serverless-projet#readme",
+  "dependencies": {
+    "axios": "^1.3.2"
+  }
 }

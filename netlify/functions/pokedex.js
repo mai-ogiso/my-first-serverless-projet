@@ -1,11 +1,9 @@
-exports.handler = async function(){
-    const POKE_API = "https://pokeapi.co/api/v2/pokedex/kanto"
+const axios = require('axios');
 
-    const response = await fetch(POKE_API)
-    const data = await response.json()
-
-    return {
-        statusCode: 200,
-        body: JSON.stringify(data)
-    }
-}
+exports.handler = async (event, context) => {
+  const response = await axios.get('https://pokeapi.co/api/v2/pokemon/1/');
+  return {
+    statusCode: 200,
+    body: JSON.stringify(response.data),
+  };
+};
