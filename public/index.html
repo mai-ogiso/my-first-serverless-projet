@@ -13,6 +13,7 @@
   <button id="fetch-btn">Fetch</button>
   <button id="fetch-kanto-btn">Fetch Kanto Pokedex</button>
   <button id="fetch-hoenn-btn">Fetch Hoenn Pokedex</button>
+  <button id="fetch-environment-btn">Fetch environment variable</button>
   <p id="response-output">Response Placeholder</p>
 
   <script>
@@ -20,6 +21,7 @@
       const fetchBtn = document.getElementById('fetch-btn')
       const fetchKantoBtn = document.getElementById('fetch-kanto-btn')
       const fetchHoennBtn = document.getElementById('fetch-hoenn-btn')
+      const fetchEnvBtn = document.getElementById('fetch-environment-btn')
       const responseText = document.getElementById('response-output')
 
       fetchBtn.addEventListener('click', async () => {
