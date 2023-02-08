@@ -31,8 +31,8 @@
         responseText.innerText = JSON.stringify(response)
       })
 
-      fetchKantoBtn.addEventListener('click', async() =>{
-        const response = await fetch('/.netlify/functions/pokedex' , {
+      fetchKantoBtn.addEventListener('click', async () => {
+        const response = await fetch('/.netlify/functions/pokedex', {
           method: "POST",
           body: JSON.stringify({
             region: "kanto"
@@ -43,8 +43,8 @@
         responseText.innerText = JSON.stringify(response)
       })
 
-      fetchHoennBtn.addEventListener('click', async() =>{
-        const response = await fetch('/.netlify/functions/pokedex' , {
+      fetchHoennBtn.addEventListener('click', async () => {
+        const response = await fetch('/.netlify/functions/pokedex', {
           method: "POST",
           body: JSON.stringify({
             region: "hoenn"
@@ -54,6 +54,14 @@
           )
         responseText.innerText = JSON.stringify(response)
       })
+
+      fetchEnvBtn.addEventListener('click', () => {
+        fetch('/.netlify/functions/get-api')
+          .then(response => response.json())
+          .then(data => {
+            console.log(data.apiKey);
+          });
+      });
 
     })
   </script>
